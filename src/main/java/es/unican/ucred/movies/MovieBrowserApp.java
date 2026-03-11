@@ -1,6 +1,6 @@
 package es.unican.ucred.movies;
 
-import es.unican.ucred.movies.service.ITMDbService
+import es.unican.ucred.movies.service.ITMDbService;
 import es.unican.ucred.movies.service.TMDbService;
 import es.unican.ucred.movies.ui.MainFrame;
 
