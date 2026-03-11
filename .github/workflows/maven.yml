@@ -31,7 +31,7 @@ jobs:
       run: mvn clean compile
 
   pruebas:
-    runs-on: ${{ matrix-os }}
+    runs-on: ${{ matrix.os }}
     needs: compilar
     strategy:
       fail-fast: false
@@ -41,7 +41,7 @@ jobs:
 
     steps:
     - uses: actions/checkout@v4
-    - name: Set up JDK 17
+    - name: Set up JDK ${{matrix.java}}
       uses: actions/setup-java@v4
       with:
         java-version: ${{matrix.java}}
